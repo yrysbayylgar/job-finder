@@ -33,6 +33,10 @@ const favorites: Module<FavoritesState, unknown> = {
     REMOVE_ITEM(state, id: string) {
       state.items = state.items.filter((job) => job.id !== id)
     },
+
+    CLEAR_ITEMS(state) {
+      state.items = []
+    },
   },
 
   actions: {
@@ -48,6 +52,10 @@ const favorites: Module<FavoritesState, unknown> = {
 
     removeFavorite({ commit }, id: string) {
       commit('REMOVE_ITEM', id)
+    },
+
+    clearFavorites({ commit }) {
+      commit('CLEAR_ITEMS')
     },
   },
 }

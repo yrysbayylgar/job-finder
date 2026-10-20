@@ -105,7 +105,7 @@ async function logout() {
 
 <style scoped>
 .login-page {
-  min-height: 100vh;
+  min-height: calc(100vh - 90px);
   display: grid;
   place-items: center;
   padding: 24px;

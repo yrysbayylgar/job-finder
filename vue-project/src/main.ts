@@ -1,4 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import store from './store'
+import router from './router'
+import { setupPersistence } from './store/persistence'
 
-createApp(App).mount('#app')
+setupPersistence()
+
+createApp(App)
+  .use(store)
+  .use(router)
+  .mount('#app')

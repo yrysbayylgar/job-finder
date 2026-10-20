@@ -1,2 +1,15 @@
-# job-finder
-Vue midterm project — Job Search Platform
+# JobFinder — Платформа поиска вакансий (Vue 3 + Vuex)
+
+Проект по поиску IT-вакансий с фильтрацией, авторизацией, избранным и откликами.
+
+Исходный код приложения находится в папке `vue-project`.
+
+## 🚀 Быстрый запуск
+
+```bash
+cd vue-project
+npm install
+npm run dev
+```
+
+Полная документация и описание вклада участников доступно в файле [vue-project/README.md](./vue-project/README.md).
